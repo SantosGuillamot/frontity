@@ -1,6 +1,6 @@
 describe("Head", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000?site=head");
+    cy.visit("http://localhost:3000?name=head");
   });
 
   it("should be able to have a title", () => {
@@ -36,7 +36,7 @@ describe("Head", () => {
   });
 
   it("should be able to have nonscripts", () => {
-    cy.get("noscript").should("contain.text", "foo.css");
+    cy.get("noscript").should("contain.text", "foo.csss");
   });
 
   it("should be able to add inline CSS", () => {

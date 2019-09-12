@@ -4,6 +4,16 @@ const settings: Settings = [
   {
     name: "head",
     packages: ["head"]
+  },
+  {
+    name: "fonts",
+    packages: [
+      {
+        name: "@frontity/tiny-router",
+        state: { router: { autoFetch: false } }
+      },
+      "fonts"
+    ]
   }
 ];
 
